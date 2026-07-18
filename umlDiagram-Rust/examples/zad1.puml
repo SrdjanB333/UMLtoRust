@@ -1,0 +1,8 @@
+@startuml
+
+class Osoba{
+    - ime: String
+    - godine: int
+
+}
+@enduml
