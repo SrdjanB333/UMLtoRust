@@ -4,5 +4,9 @@ class Osoba{
     - ime: String
     - godine: int
 
+    +getIme() : String
+    -setIme(ime : String)
+    +ispisi()
+
 }
 @enduml

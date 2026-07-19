@@ -8,18 +8,21 @@ member: attribute
       | method
       ; 
 
-attribute: visibility ID ':' type;
+attribute: visibility? ID ':' type;
+method: visibility? ID LPAREN parametarList? RPAREN (':' type)?;
 
 visibility: PLUS
-            | MINUS
-            | HASH
-            ;
+          | MINUS
+          | HASH
+          ;
 
-type: 'String'
-    | 'int'
-    | 'bool'
-    | 'float'
-    ;
+parametar: ID ':' type;
+
+parametarList: parametar
+             | parametar (COMMA parametar)*
+             ;
+
+type: ID;
 
 STARTUML: '@startuml';
 ENDUML: '@enduml';
@@ -29,6 +32,9 @@ RBRACE: '}';
 PLUS: '+';
 MINUS: '-';
 HASH: '#';
+LPAREN: '(';
+RPAREN: ')';
+COMMA: ',';
 
 
 ID: [a-zA-Z_][a-zA-Z0-9_]*;
