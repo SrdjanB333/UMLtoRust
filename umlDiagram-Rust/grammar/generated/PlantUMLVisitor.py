@@ -14,8 +14,18 @@ class PlantUMLVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by PlantUMLParser#element.
+    def visitElement(self, ctx:PlantUMLParser.ElementContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by PlantUMLParser#classDeclaration.
     def visitClassDeclaration(self, ctx:PlantUMLParser.ClassDeclarationContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by PlantUMLParser#relation.
+    def visitRelation(self, ctx:PlantUMLParser.RelationContext):
         return self.visitChildren(ctx)
 
 

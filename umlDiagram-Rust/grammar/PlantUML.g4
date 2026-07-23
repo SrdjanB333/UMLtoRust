@@ -1,8 +1,13 @@
 grammar PlantUML;
 
-program: STARTUML classDeclaration+ ENDUML EOF;
+program: STARTUML element+ ENDUML EOF;
+
+element: classDeclaration
+       | relation
+       ;
 
 classDeclaration: CLASS ID LBRACE member* RBRACE;
+relation: ID RELATION ID;
 
 member: attribute
       | method
@@ -30,6 +35,13 @@ CLASS: 'class';
 LBRACE: '{';
 RBRACE: '}';
 PLUS: '+';
+
+RELATION: '<|--'
+        | '-->'
+        | '*--'
+        | 'o--'
+        ;
+        
 MINUS: '-';
 HASH: '#';
 LPAREN: '(';

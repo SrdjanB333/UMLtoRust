@@ -4,8 +4,8 @@ from ast.nodes import (
     ClassNode,
     AttributeNode,
     MethodNode,
-    ParameterNode
-
+    ParameterNode,
+    RelationNode
 )
 
 class ASTBuilder(PlantUMLVisitor):
@@ -18,6 +18,9 @@ class ASTBuilder(PlantUMLVisitor):
 
             if isinstance(result, ClassNode):
                 program.classes.append(result)
+            
+            if isinstance(result, RelationNode):
+                program.relations.append(result)
 
         return program
     
@@ -97,4 +100,16 @@ class ASTBuilder(PlantUMLVisitor):
         return ParameterNode(
             name,
             type_name
+        )
+    
+    def visitRelation(self, ctx):
+
+        source = ctx.ID(0).getText()
+        relation_type = ctx.RELATION().getText()
+        target = ctx.ID(1).getText()
+
+        return RelationNode(
+            source,
+            relation_type,
+            target
         )

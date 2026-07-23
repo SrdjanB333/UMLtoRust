@@ -33,17 +33,24 @@ class SemanticAnalyzer:
 
     def check_types(self, program):
 
-        allowed_types = {
+        builtin_types = {
             "String",
             "int",
             "bool",
             "float"
         }
 
+        class_names = {
+            cls.name
+            for cls in program.classes
+        }
+
+        valid_types = builtin_types | class_names
+
         for cls in program.classes:
             for member in cls.members:
                 if isinstance(member, AttributeNode):
-                    if member.type not in allowed_types:
+                    if member.type not in valid_types:
                         self.errors.append(
                             f"Unknown type {member.type} "
                             f"in attribute {member.name}"

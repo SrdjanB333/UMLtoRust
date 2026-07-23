@@ -1,12 +1,16 @@
 @startuml
 
-class Osoba{
-    - ime: String
-    - godine: int
-
-    +getIme() : String
-    -setIme(ime : String)
-    +ispisi()
+class Vehicle {
 
 }
+
+class Car {
+
+}
+
+
+Car o-- Engine
+
+Vehicle <|-- Car
+
 @enduml

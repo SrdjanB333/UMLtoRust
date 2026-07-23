@@ -10,31 +10,35 @@ else:
 
 def serializedATN():
     return [
-        4,1,14,82,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
-        6,2,7,7,7,2,8,7,8,1,0,1,0,4,0,21,8,0,11,0,12,0,22,1,0,1,0,1,0,1,
-        1,1,1,1,1,1,1,5,1,32,8,1,10,1,12,1,35,9,1,1,1,1,1,1,2,1,2,3,2,41,
-        8,2,1,3,3,3,44,8,3,1,3,1,3,1,3,1,3,1,4,3,4,51,8,4,1,4,1,4,1,4,3,
-        4,56,8,4,1,4,1,4,1,4,3,4,61,8,4,1,5,1,5,1,6,1,6,1,6,1,6,1,7,1,7,
-        1,7,1,7,5,7,73,8,7,10,7,12,7,76,9,7,3,7,78,8,7,1,8,1,8,1,8,0,0,9,
-        0,2,4,6,8,10,12,14,16,0,1,1,0,7,9,81,0,18,1,0,0,0,2,27,1,0,0,0,4,
-        40,1,0,0,0,6,43,1,0,0,0,8,50,1,0,0,0,10,62,1,0,0,0,12,64,1,0,0,0,
-        14,77,1,0,0,0,16,79,1,0,0,0,18,20,5,2,0,0,19,21,3,2,1,0,20,19,1,
-        0,0,0,21,22,1,0,0,0,22,20,1,0,0,0,22,23,1,0,0,0,23,24,1,0,0,0,24,
-        25,5,3,0,0,25,26,5,0,0,1,26,1,1,0,0,0,27,28,5,4,0,0,28,29,5,13,0,
-        0,29,33,5,5,0,0,30,32,3,4,2,0,31,30,1,0,0,0,32,35,1,0,0,0,33,31,
-        1,0,0,0,33,34,1,0,0,0,34,36,1,0,0,0,35,33,1,0,0,0,36,37,5,6,0,0,
-        37,3,1,0,0,0,38,41,3,6,3,0,39,41,3,8,4,0,40,38,1,0,0,0,40,39,1,0,
-        0,0,41,5,1,0,0,0,42,44,3,10,5,0,43,42,1,0,0,0,43,44,1,0,0,0,44,45,
-        1,0,0,0,45,46,5,13,0,0,46,47,5,1,0,0,47,48,3,16,8,0,48,7,1,0,0,0,
-        49,51,3,10,5,0,50,49,1,0,0,0,50,51,1,0,0,0,51,52,1,0,0,0,52,53,5,
-        13,0,0,53,55,5,10,0,0,54,56,3,14,7,0,55,54,1,0,0,0,55,56,1,0,0,0,
-        56,57,1,0,0,0,57,60,5,11,0,0,58,59,5,1,0,0,59,61,3,16,8,0,60,58,
-        1,0,0,0,60,61,1,0,0,0,61,9,1,0,0,0,62,63,7,0,0,0,63,11,1,0,0,0,64,
-        65,5,13,0,0,65,66,5,1,0,0,66,67,3,16,8,0,67,13,1,0,0,0,68,78,3,12,
-        6,0,69,74,3,12,6,0,70,71,5,12,0,0,71,73,3,12,6,0,72,70,1,0,0,0,73,
-        76,1,0,0,0,74,72,1,0,0,0,74,75,1,0,0,0,75,78,1,0,0,0,76,74,1,0,0,
-        0,77,68,1,0,0,0,77,69,1,0,0,0,78,15,1,0,0,0,79,80,5,13,0,0,80,17,
-        1,0,0,0,9,22,33,40,43,50,55,60,74,77
+        4,1,15,94,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,1,0,1,0,4,0,25,8,0,11,0,12,0,
+        26,1,0,1,0,1,0,1,1,1,1,3,1,34,8,1,1,2,1,2,1,2,1,2,5,2,40,8,2,10,
+        2,12,2,43,9,2,1,2,1,2,1,3,1,3,1,3,1,3,1,4,1,4,3,4,53,8,4,1,5,3,5,
+        56,8,5,1,5,1,5,1,5,1,5,1,6,3,6,63,8,6,1,6,1,6,1,6,3,6,68,8,6,1,6,
+        1,6,1,6,3,6,73,8,6,1,7,1,7,1,8,1,8,1,8,1,8,1,9,1,9,1,9,1,9,5,9,85,
+        8,9,10,9,12,9,88,9,9,3,9,90,8,9,1,10,1,10,1,10,0,0,11,0,2,4,6,8,
+        10,12,14,16,18,20,0,1,2,0,7,7,9,10,92,0,22,1,0,0,0,2,33,1,0,0,0,
+        4,35,1,0,0,0,6,46,1,0,0,0,8,52,1,0,0,0,10,55,1,0,0,0,12,62,1,0,0,
+        0,14,74,1,0,0,0,16,76,1,0,0,0,18,89,1,0,0,0,20,91,1,0,0,0,22,24,
+        5,2,0,0,23,25,3,2,1,0,24,23,1,0,0,0,25,26,1,0,0,0,26,24,1,0,0,0,
+        26,27,1,0,0,0,27,28,1,0,0,0,28,29,5,3,0,0,29,30,5,0,0,1,30,1,1,0,
+        0,0,31,34,3,4,2,0,32,34,3,6,3,0,33,31,1,0,0,0,33,32,1,0,0,0,34,3,
+        1,0,0,0,35,36,5,4,0,0,36,37,5,14,0,0,37,41,5,5,0,0,38,40,3,8,4,0,
+        39,38,1,0,0,0,40,43,1,0,0,0,41,39,1,0,0,0,41,42,1,0,0,0,42,44,1,
+        0,0,0,43,41,1,0,0,0,44,45,5,6,0,0,45,5,1,0,0,0,46,47,5,14,0,0,47,
+        48,5,8,0,0,48,49,5,14,0,0,49,7,1,0,0,0,50,53,3,10,5,0,51,53,3,12,
+        6,0,52,50,1,0,0,0,52,51,1,0,0,0,53,9,1,0,0,0,54,56,3,14,7,0,55,54,
+        1,0,0,0,55,56,1,0,0,0,56,57,1,0,0,0,57,58,5,14,0,0,58,59,5,1,0,0,
+        59,60,3,20,10,0,60,11,1,0,0,0,61,63,3,14,7,0,62,61,1,0,0,0,62,63,
+        1,0,0,0,63,64,1,0,0,0,64,65,5,14,0,0,65,67,5,11,0,0,66,68,3,18,9,
+        0,67,66,1,0,0,0,67,68,1,0,0,0,68,69,1,0,0,0,69,72,5,12,0,0,70,71,
+        5,1,0,0,71,73,3,20,10,0,72,70,1,0,0,0,72,73,1,0,0,0,73,13,1,0,0,
+        0,74,75,7,0,0,0,75,15,1,0,0,0,76,77,5,14,0,0,77,78,5,1,0,0,78,79,
+        3,20,10,0,79,17,1,0,0,0,80,90,3,16,8,0,81,86,3,16,8,0,82,83,5,13,
+        0,0,83,85,3,16,8,0,84,82,1,0,0,0,85,88,1,0,0,0,86,84,1,0,0,0,86,
+        87,1,0,0,0,87,90,1,0,0,0,88,86,1,0,0,0,89,80,1,0,0,0,89,81,1,0,0,
+        0,90,19,1,0,0,0,91,92,5,14,0,0,92,21,1,0,0,0,10,26,33,41,52,55,62,
+        67,72,86,89
     ]
 
 class PlantUMLParser ( Parser ):
@@ -48,25 +52,28 @@ class PlantUMLParser ( Parser ):
     sharedContextCache = PredictionContextCache()
 
     literalNames = [ "<INVALID>", "':'", "'@startuml'", "'@enduml'", "'class'", 
-                     "'{'", "'}'", "'+'", "'-'", "'#'", "'('", "')'", "','" ]
+                     "'{'", "'}'", "'+'", "<INVALID>", "'-'", "'#'", "'('", 
+                     "')'", "','" ]
 
     symbolicNames = [ "<INVALID>", "<INVALID>", "STARTUML", "ENDUML", "CLASS", 
-                      "LBRACE", "RBRACE", "PLUS", "MINUS", "HASH", "LPAREN", 
-                      "RPAREN", "COMMA", "ID", "WS" ]
+                      "LBRACE", "RBRACE", "PLUS", "RELATION", "MINUS", "HASH", 
+                      "LPAREN", "RPAREN", "COMMA", "ID", "WS" ]
 
     RULE_program = 0
-    RULE_classDeclaration = 1
-    RULE_member = 2
-    RULE_attribute = 3
-    RULE_method = 4
-    RULE_visibility = 5
-    RULE_parametar = 6
-    RULE_parametarList = 7
-    RULE_type = 8
+    RULE_element = 1
+    RULE_classDeclaration = 2
+    RULE_relation = 3
+    RULE_member = 4
+    RULE_attribute = 5
+    RULE_method = 6
+    RULE_visibility = 7
+    RULE_parametar = 8
+    RULE_parametarList = 9
+    RULE_type = 10
 
-    ruleNames =  [ "program", "classDeclaration", "member", "attribute", 
-                   "method", "visibility", "parametar", "parametarList", 
-                   "type" ]
+    ruleNames =  [ "program", "element", "classDeclaration", "relation", 
+                   "member", "attribute", "method", "visibility", "parametar", 
+                   "parametarList", "type" ]
 
     EOF = Token.EOF
     T__0=1
@@ -76,13 +83,14 @@ class PlantUMLParser ( Parser ):
     LBRACE=5
     RBRACE=6
     PLUS=7
-    MINUS=8
-    HASH=9
-    LPAREN=10
-    RPAREN=11
-    COMMA=12
-    ID=13
-    WS=14
+    RELATION=8
+    MINUS=9
+    HASH=10
+    LPAREN=11
+    RPAREN=12
+    COMMA=13
+    ID=14
+    WS=15
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -109,11 +117,11 @@ class PlantUMLParser ( Parser ):
         def EOF(self):
             return self.getToken(PlantUMLParser.EOF, 0)
 
-        def classDeclaration(self, i:int=None):
+        def element(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(PlantUMLParser.ClassDeclarationContext)
+                return self.getTypedRuleContexts(PlantUMLParser.ElementContext)
             else:
-                return self.getTypedRuleContext(PlantUMLParser.ClassDeclarationContext,i)
+                return self.getTypedRuleContext(PlantUMLParser.ElementContext,i)
 
 
         def getRuleIndex(self):
@@ -143,24 +151,89 @@ class PlantUMLParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 18
+            self.state = 22
             self.match(PlantUMLParser.STARTUML)
-            self.state = 20 
+            self.state = 24 
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while True:
-                self.state = 19
-                self.classDeclaration()
-                self.state = 22 
+                self.state = 23
+                self.element()
+                self.state = 26 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if not (_la==4):
+                if not (_la==4 or _la==14):
                     break
 
-            self.state = 24
+            self.state = 28
             self.match(PlantUMLParser.ENDUML)
-            self.state = 25
+            self.state = 29
             self.match(PlantUMLParser.EOF)
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class ElementContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def classDeclaration(self):
+            return self.getTypedRuleContext(PlantUMLParser.ClassDeclarationContext,0)
+
+
+        def relation(self):
+            return self.getTypedRuleContext(PlantUMLParser.RelationContext,0)
+
+
+        def getRuleIndex(self):
+            return PlantUMLParser.RULE_element
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterElement" ):
+                listener.enterElement(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitElement" ):
+                listener.exitElement(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitElement" ):
+                return visitor.visitElement(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def element(self):
+
+        localctx = PlantUMLParser.ElementContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 2, self.RULE_element)
+        try:
+            self.state = 33
+            self._errHandler.sync(self)
+            token = self._input.LA(1)
+            if token in [4]:
+                self.enterOuterAlt(localctx, 1)
+                self.state = 31
+                self.classDeclaration()
+                pass
+            elif token in [14]:
+                self.enterOuterAlt(localctx, 2)
+                self.state = 32
+                self.relation()
+                pass
+            else:
+                raise NoViableAltException(self)
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -219,28 +292,85 @@ class PlantUMLParser ( Parser ):
     def classDeclaration(self):
 
         localctx = PlantUMLParser.ClassDeclarationContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 2, self.RULE_classDeclaration)
+        self.enterRule(localctx, 4, self.RULE_classDeclaration)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 27
+            self.state = 35
             self.match(PlantUMLParser.CLASS)
-            self.state = 28
+            self.state = 36
             self.match(PlantUMLParser.ID)
-            self.state = 29
+            self.state = 37
             self.match(PlantUMLParser.LBRACE)
-            self.state = 33
+            self.state = 41
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 9088) != 0):
-                self.state = 30
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 18048) != 0):
+                self.state = 38
                 self.member()
-                self.state = 35
+                self.state = 43
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 36
+            self.state = 44
             self.match(PlantUMLParser.RBRACE)
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class RelationContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def ID(self, i:int=None):
+            if i is None:
+                return self.getTokens(PlantUMLParser.ID)
+            else:
+                return self.getToken(PlantUMLParser.ID, i)
+
+        def RELATION(self):
+            return self.getToken(PlantUMLParser.RELATION, 0)
+
+        def getRuleIndex(self):
+            return PlantUMLParser.RULE_relation
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterRelation" ):
+                listener.enterRelation(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitRelation" ):
+                listener.exitRelation(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitRelation" ):
+                return visitor.visitRelation(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def relation(self):
+
+        localctx = PlantUMLParser.RelationContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 6, self.RULE_relation)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 46
+            self.match(PlantUMLParser.ID)
+            self.state = 47
+            self.match(PlantUMLParser.RELATION)
+            self.state = 48
+            self.match(PlantUMLParser.ID)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -288,20 +418,20 @@ class PlantUMLParser ( Parser ):
     def member(self):
 
         localctx = PlantUMLParser.MemberContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 4, self.RULE_member)
+        self.enterRule(localctx, 8, self.RULE_member)
         try:
-            self.state = 40
+            self.state = 52
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,2,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,3,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 38
+                self.state = 50
                 self.attribute()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 39
+                self.state = 51
                 self.method()
                 pass
 
@@ -356,23 +486,23 @@ class PlantUMLParser ( Parser ):
     def attribute(self):
 
         localctx = PlantUMLParser.AttributeContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 6, self.RULE_attribute)
+        self.enterRule(localctx, 10, self.RULE_attribute)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 43
+            self.state = 55
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 896) != 0):
-                self.state = 42
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 1664) != 0):
+                self.state = 54
                 self.visibility()
 
 
-            self.state = 45
+            self.state = 57
             self.match(PlantUMLParser.ID)
-            self.state = 46
+            self.state = 58
             self.match(PlantUMLParser.T__0)
-            self.state = 47
+            self.state = 59
             self.type_()
         except RecognitionException as re:
             localctx.exception = re
@@ -434,39 +564,39 @@ class PlantUMLParser ( Parser ):
     def method(self):
 
         localctx = PlantUMLParser.MethodContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 8, self.RULE_method)
+        self.enterRule(localctx, 12, self.RULE_method)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 50
+            self.state = 62
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 896) != 0):
-                self.state = 49
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 1664) != 0):
+                self.state = 61
                 self.visibility()
 
 
-            self.state = 52
+            self.state = 64
             self.match(PlantUMLParser.ID)
-            self.state = 53
+            self.state = 65
             self.match(PlantUMLParser.LPAREN)
-            self.state = 55
+            self.state = 67
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==13:
-                self.state = 54
+            if _la==14:
+                self.state = 66
                 self.parametarList()
 
 
-            self.state = 57
+            self.state = 69
             self.match(PlantUMLParser.RPAREN)
-            self.state = 60
+            self.state = 72
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==1:
-                self.state = 58
+                self.state = 70
                 self.match(PlantUMLParser.T__0)
-                self.state = 59
+                self.state = 71
                 self.type_()
 
 
@@ -518,13 +648,13 @@ class PlantUMLParser ( Parser ):
     def visibility(self):
 
         localctx = PlantUMLParser.VisibilityContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 10, self.RULE_visibility)
+        self.enterRule(localctx, 14, self.RULE_visibility)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 62
+            self.state = 74
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 896) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 1664) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -575,14 +705,14 @@ class PlantUMLParser ( Parser ):
     def parametar(self):
 
         localctx = PlantUMLParser.ParametarContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 12, self.RULE_parametar)
+        self.enterRule(localctx, 16, self.RULE_parametar)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 64
+            self.state = 76
             self.match(PlantUMLParser.ID)
-            self.state = 65
+            self.state = 77
             self.match(PlantUMLParser.T__0)
-            self.state = 66
+            self.state = 78
             self.type_()
         except RecognitionException as re:
             localctx.exception = re
@@ -636,31 +766,31 @@ class PlantUMLParser ( Parser ):
     def parametarList(self):
 
         localctx = PlantUMLParser.ParametarListContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 14, self.RULE_parametarList)
+        self.enterRule(localctx, 18, self.RULE_parametarList)
         self._la = 0 # Token type
         try:
-            self.state = 77
+            self.state = 89
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,8,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,9,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 68
+                self.state = 80
                 self.parametar()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 69
+                self.state = 81
                 self.parametar()
-                self.state = 74
+                self.state = 86
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                while _la==12:
-                    self.state = 70
+                while _la==13:
+                    self.state = 82
                     self.match(PlantUMLParser.COMMA)
-                    self.state = 71
+                    self.state = 83
                     self.parametar()
-                    self.state = 76
+                    self.state = 88
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
 
@@ -709,10 +839,10 @@ class PlantUMLParser ( Parser ):
     def type_(self):
 
         localctx = PlantUMLParser.TypeContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 16, self.RULE_type)
+        self.enterRule(localctx, 20, self.RULE_type)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 79
+            self.state = 91
             self.match(PlantUMLParser.ID)
         except RecognitionException as re:
             localctx.exception = re

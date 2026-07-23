@@ -29,10 +29,9 @@ def main():
 
     generator = RustGenerator()
 
-    rust_code = generator.generate(ast)
+    generator.write_to_files(ast)
 
-    print("\nGenerated Rust:")
-    print(rust_code)
+    print("Rust kod je uspjesno generisan.")
 
 
 def print_ast(program):

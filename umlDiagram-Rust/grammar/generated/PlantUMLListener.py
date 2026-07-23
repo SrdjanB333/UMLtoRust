@@ -17,12 +17,30 @@ class PlantUMLListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by PlantUMLParser#element.
+    def enterElement(self, ctx:PlantUMLParser.ElementContext):
+        pass
+
+    # Exit a parse tree produced by PlantUMLParser#element.
+    def exitElement(self, ctx:PlantUMLParser.ElementContext):
+        pass
+
+
     # Enter a parse tree produced by PlantUMLParser#classDeclaration.
     def enterClassDeclaration(self, ctx:PlantUMLParser.ClassDeclarationContext):
         pass
 
     # Exit a parse tree produced by PlantUMLParser#classDeclaration.
     def exitClassDeclaration(self, ctx:PlantUMLParser.ClassDeclarationContext):
+        pass
+
+
+    # Enter a parse tree produced by PlantUMLParser#relation.
+    def enterRelation(self, ctx:PlantUMLParser.RelationContext):
+        pass
+
+    # Exit a parse tree produced by PlantUMLParser#relation.
+    def exitRelation(self, ctx:PlantUMLParser.RelationContext):
         pass
 
 
