@@ -3,6 +3,7 @@ from antlr4 import *
 from generated.PlantUMLLexer import PlantUMLLexer
 from generated.PlantUMLParser import PlantUMLParser
 from semantic.analyzer import SemanticAnalyzer
+from generator.rustGenerator import RustGenerator
 
 from ast.visitor import ASTBuilder
 
@@ -25,6 +26,13 @@ def main():
         print("ERROR:", error)
 
     print_ast(ast)
+
+    generator = RustGenerator()
+
+    rust_code = generator.generate(ast)
+
+    print("\nGenerated Rust:")
+    print(rust_code)
 
 
 def print_ast(program):
