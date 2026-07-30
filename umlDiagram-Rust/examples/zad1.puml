@@ -1,16 +1,8 @@
 @startuml
 
-class Vehicle {
-
+class Person {
+    ime : String
+    godine : int
 }
-
-class Car {
-
-}
-
-
-Car o-- Engine
-
-Vehicle <|-- Car
 
 @enduml

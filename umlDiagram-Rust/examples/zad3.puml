@@ -1,0 +1,17 @@
+@startuml
+
+class Engine {
+    model : String
+}
+
+class Car {
+
+    marka : String
+    +start()
+    +setEngine(e : Engine)
+
+}
+
+Car o-- Engine
+
+@enduml

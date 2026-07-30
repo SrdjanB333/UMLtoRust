@@ -1,0 +1,23 @@
+@startuml
+
+class Vehicle {
+    marka : String
+}
+
+class Car {
+    vrata : int
+}
+
+class Engine {
+    snaga : float
+}
+
+class Driver {
+    ime : String
+}
+
+Vehicle <|-- Car
+Car *-- Engine
+Driver --> Car
+
+@enduml

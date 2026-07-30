@@ -62,7 +62,7 @@ class RustGenerator:
         rust_type = self.map_type(attribute.type)
 
         self.output.append(
-            f"  {attribute.name}: {rust_type},"
+            f"    {attribute.name}: {rust_type},"
             )
     
     def generate_method(self, method):
@@ -89,7 +89,7 @@ class RustGenerator:
 
         for parameter in parameters:
             result.append(
-                f"  {parameter.name}: {self.map_type(parameter.type)}"
+                f"   {parameter.name}: {self.map_type(parameter.type)}"
             )
 
         return ", ".join(result)

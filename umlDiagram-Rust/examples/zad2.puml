@@ -1,0 +1,13 @@
+@startuml
+
+class Person {
+    ime : String
+}
+
+class Address {
+    grad : String
+}
+
+Person --> Address
+
+@enduml

@@ -1,7 +1,7 @@
 from antlr4 import *
 
-from generated.PlantUMLLexer import PlantUMLLexer
-from generated.PlantUMLParser import PlantUMLParser
+from grammar.generated.PlantUMLLexer import PlantUMLLexer
+from grammar.generated.PlantUMLParser import PlantUMLParser
 from semantic.analyzer import SemanticAnalyzer
 from generator.rustGenerator import RustGenerator
 
@@ -10,7 +10,7 @@ from ast.visitor import ASTBuilder
 
 def main():
 
-    input_stream = FileStream("C:/Users/PC/Desktop/Srdjan fakultet/III godina/Konstrukcija kompilatora/ProjekatKK/umlDiagram-Rust/examples/zad1.puml")
+    input_stream = FileStream("C:/Users/PC/Desktop/Srdjan fakultet/III godina/Konstrukcija kompilatora/ProjekatKK/umlDiagram-Rust/examples/zad4.puml")
     lexer = PlantUMLLexer(input_stream)
     token_stream = CommonTokenStream(lexer)
     parser = PlantUMLParser(token_stream)
