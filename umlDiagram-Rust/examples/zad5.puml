@@ -1,0 +1,66 @@
+@startuml
+
+class User {
+    username : String
+    email : String
+}
+
+class Customer {
+    address : String
+    phone : String
+}
+
+class Employee {
+    position : String
+    salary : float
+}
+
+class Order {
+    orderId : int
+    total : float
+}
+
+class Product {
+    name : String
+    price : float
+}
+
+class Category {
+    name : String
+}
+
+class Payment {
+    amount : float
+    method : String
+}
+
+class Address {
+    street : String
+    city : String
+}
+
+class Warehouse {
+    name : String
+}
+
+class Supplier {
+    name : String
+    phone : String
+}
+
+User <|-- Customer
+User <|-- Employee
+
+Customer *-- Address
+Customer --> Order
+
+Order *-- Payment
+Order *-- Product
+
+Product --> Category
+Product --> Supplier
+
+Warehouse o-- Product
+Employee --> Warehouse
+
+@enduml

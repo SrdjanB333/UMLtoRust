@@ -1,3 +1,4 @@
 pub struct Address {
-  grad: String,
+    street: String,
+    city: String,
 }
