@@ -10,7 +10,7 @@ from ast.visitor import ASTBuilder
 
 def main():
 
-    input_stream = FileStream("C:/Users/PC/Desktop/Srdjan fakultet/III godina/Konstrukcija kompilatora/ProjekatKK/umlDiagram-Rust/examples/zad5.puml")
+    input_stream = FileStream("C:/Users/PC/Desktop/Srdjan fakultet/III godina/Konstrukcija kompilatora/ProjekatKK/umlDiagram-Rust/examples/zad6.puml")
     lexer = PlantUMLLexer(input_stream)
     token_stream = CommonTokenStream(lexer)
     parser = PlantUMLParser(token_stream)
@@ -22,8 +22,10 @@ def main():
     errors = analyzer.analyze(ast)
 
 
-    for error in errors:
-        print("ERROR:", error)
+    if errors:
+        for error in errors:
+            print("ERROR:", error)
+        return
 
     print_ast(ast)
 

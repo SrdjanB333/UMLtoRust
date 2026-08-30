@@ -1,0 +1,16 @@
+@startuml
+class Student {
+    -name: String
+    -age: int
+}
+
+class Professor {
+    -name: String
+    -department: String
+}
+
+class Student {
+    -name: String
+    -index: int
+}
+@enduml
