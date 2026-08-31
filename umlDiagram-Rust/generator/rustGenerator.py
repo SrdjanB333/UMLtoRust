@@ -72,13 +72,19 @@ class RustGenerator:
                 return cls
         return None
 
-    def generate_attribute(self, attribute):
-
+    def generate_attribute(self, attribute, existing_names=None):
+        if existing_names is None:
+            existing_names = set()
+        
         rust_type = self.map_type(attribute.type)
-
-        self.output.append(
-            f"    {attribute.name}: {rust_type},"
-            )
+    
+        if attribute.name in existing_names:
+            new_name = f"{attribute.name}_override"
+            self.output.append(f"    {new_name}: {rust_type},")
+            existing_names.add(new_name)
+        else:
+            self.output.append(f"    {attribute.name}: {rust_type},")
+            existing_names.add(attribute.name)
     
     def generate_method(self, method):
 
