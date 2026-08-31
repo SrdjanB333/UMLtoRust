@@ -23,39 +23,54 @@ class RustGenerator:
         return "\n".join(self.output)
     
     def generate_class(self, cls):
-
-        # Generisanje struct-a
         self.output.append(f"pub struct {cls.name} {{")
-
+        
+        for relation in self.program.relations:
+            if relation.relation_type == "<|--" and relation.target == cls.name:
+                parent_name = relation.source
+                parent_class = self.find_class(parent_name)
+                if parent_class:
+                    for member in parent_class.members:
+                        if isinstance(member, AttributeNode):
+                            rust_type = self.map_type(member.type)
+                            self.output.append(f"    {member.name}: {rust_type},")
+        
         for member in cls.members:
             if isinstance(member, AttributeNode):
                 self.generate_attribute(member)
-
-        # Dodavanje relacija
+        
         for relation in self.program.relations:
-            self.generate_relation(
-                relation,
-                cls
-            )
-
+            if relation.source == cls.name and relation.relation_type != "<|--":
+                self.generate_relation(relation, cls)
+        
         self.output.append("}")
         self.output.append("")
-
-        # Izdvajanje metoda
+        
         methods = []
-
         for member in cls.members:
             if isinstance(member, MethodNode):
                 methods.append(member)
-
-        # Generisanje impl bloka
+        
         if methods:
             self.output.append(f"impl {cls.name} {{")
             for method in methods:
                 self.generate_method(method)
-
             self.output.append("}")
             self.output.append("")
+        
+        for relation in self.program.relations:
+            if relation.relation_type == "<|--" and relation.target == cls.name:
+                parent_name = relation.source
+                self.output.append(f"impl {parent_name} for {cls.name} {{")
+                self.output.append("    // TODO: implement trait methods")
+                self.output.append("}")
+                self.output.append("")
+
+    def find_class(self, name):
+        for cls in self.program.classes:
+            if cls.name == name:
+                return cls
+        return None
 
     def generate_attribute(self, attribute):
 
@@ -114,6 +129,12 @@ class RustGenerator:
         elif relation.relation_type == "*--":
             self.output.append(
                 f"    {field_name}: Box<{relation.target}>,"
+            )
+        elif relation.relation_type == "<|--":
+            parent_name = relation.source
+            field_name = parent_name.lower()
+            self.output.append(
+                f"    {field_name}: {parent_name},"
             )
     
     def map_visibility(self, visibility):
@@ -180,9 +201,3 @@ class RustGenerator:
 
             with open(filename, "w", encoding="utf-8") as file:
                 file.write("\n".join(self.output))
-        
-        for relation in program.relations:
-            if relation.relation_type == "<|--":
-                self.generate_inheritance(
-                    relation
-                )

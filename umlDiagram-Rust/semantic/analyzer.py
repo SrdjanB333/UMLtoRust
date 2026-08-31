@@ -14,8 +14,8 @@ class SemanticAnalyzer:
     def analyze(self, program):
 
         self.check_duplicate_classes(program)
-
         self.check_types(program)
+        self.check_duplicate_members(program)
 
         return self.errors
     
@@ -55,3 +55,28 @@ class SemanticAnalyzer:
                             f"Unknown type {member.type} "
                             f"in attribute {member.name}"
                         )
+
+    def check_duplicate_members(self, program):
+        
+        for cls in program.classes:
+            attribute_names = set()
+            for member in cls.members:
+                if isinstance(member, AttributeNode):
+                    if member.name in attribute_names:
+                        self.errors.append(
+                            f"Duplicate attribute '{member.name}' "
+                            f"in class '{cls.name}'"
+                        )
+                    else:
+                        attribute_names.add(member.name)
+            
+            method_names = set()
+            for member in cls.members:
+                if isinstance(member, MethodNode):
+                    if member.name in method_names:
+                        self.errors.append(
+                            f"Duplicate method '{member.name}' "
+                            f"in class '{cls.name}'"
+                        )
+                    else:
+                        method_names.add(member.name)

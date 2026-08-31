@@ -1,4 +1,4 @@
 pub struct Person {
-  ime: String,
+    ime: String,
     address: Address,
 }

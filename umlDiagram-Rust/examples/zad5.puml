@@ -34,7 +34,7 @@ class Payment {
     method : String
 }
 
-class Address {
+class Address5 {
     street : String
     city : String
 }

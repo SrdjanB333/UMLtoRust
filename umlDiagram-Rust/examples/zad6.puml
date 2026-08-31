@@ -1,7 +1,12 @@
 @startuml
 class Student {
     -name: String
+    -name: String
     -age: int
+    -index: Index
+
+    +joinSubject(subject: String)
+    +joinSubject(name: String, password: int)
 }
 
 class Professor {
